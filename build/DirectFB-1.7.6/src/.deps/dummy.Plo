@@ -1,0 +1,7 @@
+dummy.lo: dummy.cpp \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ ../config.h
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+../config.h:

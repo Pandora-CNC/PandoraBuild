@@ -1,0 +1,9 @@
+flz.lo: flz.c \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ ../../config.h flz.c
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+../../config.h:
+
+flz.c:

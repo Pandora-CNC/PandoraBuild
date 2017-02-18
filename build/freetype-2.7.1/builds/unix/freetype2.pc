@@ -1,0 +1,14 @@
+prefix=/home/bmuessig/Pandora/target
+exec_prefix=/home/bmuessig/Pandora/target
+libdir=/home/bmuessig/Pandora/target/lib
+includedir=/home/bmuessig/Pandora/target/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 19.0.13
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,130 @@
+contrib/tools/png-fix-itxt.o: contrib/tools/png-fix-itxt.c \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdio.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/features.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/cdefs.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/wordsize.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stddef.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/types.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/typesizes.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/libio.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/_G_config.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/wchar.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stdarg.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio_lim.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sys_errlist.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio.h \
+ /home/bmuessig/Pandora/target/include/zlib.h \
+ /home/bmuessig/Pandora/target/include/zconf.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include-fixed/limits.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include-fixed/syslimits.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/limits.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/posix1_lim.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/local_lim.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/linux/limits.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/posix2_lim.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/types.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/time.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/endian.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/endian.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/byteswap.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/byteswap-16.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/select.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/select.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sigset.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/time.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/sysmacros.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/pthreadtypes.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/unistd.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/posix_opt.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/environments.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/confname.h \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/getopt.h
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdio.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/features.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/gnu/stubs.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stddef.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/types.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/typesizes.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/libio.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/_G_config.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/wchar.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stdarg.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio_lim.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sys_errlist.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio.h:
+
+/home/bmuessig/Pandora/target/include/zlib.h:
+
+/home/bmuessig/Pandora/target/include/zconf.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include-fixed/limits.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include-fixed/syslimits.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/limits.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/posix1_lim.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/local_lim.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/linux/limits.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/posix2_lim.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/types.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/time.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/endian.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/endian.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/byteswap.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/byteswap-16.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/select.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/select.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sigset.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/time.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/sysmacros.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/pthreadtypes.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/unistd.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/posix_opt.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/environments.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/confname.h:
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/getopt.h:

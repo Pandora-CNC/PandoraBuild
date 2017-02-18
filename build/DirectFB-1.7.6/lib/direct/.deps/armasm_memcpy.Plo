@@ -1,0 +1,7 @@
+armasm_memcpy.lo: armasm_memcpy.S \
+ /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ ../../config.h
+
+/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+
+../../config.h:
