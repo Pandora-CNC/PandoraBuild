@@ -7,7 +7,6 @@ contrib/libtests/timepng.o: contrib/libtests/timepng.c \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stddef.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-bsearch.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-float.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdio.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/types.h \
@@ -18,10 +17,7 @@ contrib/libtests/timepng.o: contrib/libtests/timepng.c \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stdarg.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio_lim.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sys_errlist.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/string.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string2.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/errno.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/errno.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/linux/errno.h \
@@ -59,8 +55,6 @@ contrib/libtests/timepng.o: contrib/libtests/timepng.c \
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stddef.h:
 
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-bsearch.h:
-
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-float.h:
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdio.h:
@@ -81,13 +75,7 @@ contrib/libtests/timepng.o: contrib/libtests/timepng.c \
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sys_errlist.h:
 
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio.h:
-
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/string.h:
-
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string.h:
-
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string2.h:
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/errno.h:
 

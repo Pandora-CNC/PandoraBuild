@@ -79,7 +79,7 @@ T := -o$(space)
 #   We use our own FreeType configuration file.
 #
 CPPFLAGS := -I/home/bmuessig/Pandora/target/include
-CFLAGS   := -c -Wall -g -O2  -DFT_CONFIG_OPTION_SYSTEM_ZLIB -DFT_CONFIG_CONFIG_H="<ftconfig.h>"
+CFLAGS   := -c -Wall -I/home/bmuessig/Pandora/target/include -I/home/bmuessig/Pandora/target/include -DFT_CONFIG_OPTION_SYSTEM_ZLIB -I/home/bmuessig/Pandora/target/include/libpng16 -DFT_CONFIG_OPTION_USE_PNG -DFT_CONFIG_CONFIG_H="<ftconfig.h>"
 
 # ANSIFLAGS: Put there the flags used to make your compiler ANSI-compliant.
 #
@@ -93,7 +93,7 @@ CC    := $(LIBTOOL) --mode=compile $(CCraw)
 
 # Linker flags.
 #
-LDFLAGS := -L/home/bmuessig/Pandora/target/lib -lz
+LDFLAGS := -L/home/bmuessig/Pandora/target/lib -L/home/bmuessig/Pandora/target/lib -lz -L/home/bmuessig/Pandora/target/lib -lpng16
 
 
 # export symbols

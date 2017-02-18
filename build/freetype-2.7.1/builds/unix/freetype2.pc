@@ -8,7 +8,7 @@ URL: http://freetype.org
 Description: A free, high-quality, and portable font engine.
 Version: 19.0.13
 Requires:
-Requires.private: 
+Requires.private: zlib, libpng
 Libs: -L${libdir} -lfreetype
-Libs.private: -lz
+Libs.private: 
 Cflags: -I${includedir}/freetype2

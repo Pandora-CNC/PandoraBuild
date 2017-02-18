@@ -529,9 +529,9 @@ AWK = gawk
 CC = armarmv5te-unknown-linux-gnueabi-gcc
 CCAS = armarmv5te-unknown-linux-gnueabi-gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -g -O2
+CCASFLAGS = -I/home/bmuessig/Pandora/target/include
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2
+CFLAGS = -I/home/bmuessig/Pandora/target/include
 CPP = armarmv5te-unknown-linux-gnueabi-gcc -E
 CPPFLAGS = -I/home/bmuessig/Pandora/target/include
 CYGPATH_W = echo

@@ -13,6 +13,10 @@ export AS=$(CROSS)-as
 export AR=$(CROSS)-ar
 export RANLIB=$(CROSS)-ranlib
 
+export LD_LIBRARY_PATH=$(PREFIX)/lib
+export PKG_CONFIG_PATH=$(LD_LIBRARY_PATH)/pkgconfig
+export INC_PATH=$(PREFIX)/include
+
 ZLIB_DIR=zlib-1.2.11
 ZLIB_BIN=$(PREFIX)/lib/libz.a
 LIBPNG_DIR=libpng-1.6.28
@@ -27,29 +31,53 @@ DFB_DIR=DirectFB-1.7.6
 DFB_BIN=$(PREFIX)/lib/libdirect.a
 DFB_OPT=--enable-static=yes --enable-osx=no --enable-x11=no --enable-x11vdpau=no --enable-multicore=no --enable-fbdev=yes --enable-zlib=yes --enable-png=yes --enable-jpeg=yes --enable-freetype=yes --enable-linotype=no --enable-video4linux=no --with-gfxdrivers=none --with-inputdrivers=keyboard,linuxinput,ps2mouse
 SDL_DIR=SDL-1.2.15
-SDL_BIN=$(PREFIX)/lib/
+SDL_BIN=$(PREFIX)/lib/libSDL.a
 SDL_OPT=--enable-static --enable-shared --enable-video-fbcon --disable-audio --disable-joystick --disable-cdrom --disable-loadso --disable-cpuinfo --disable-assembly --disable-oss --disable-alsa --disable-alsatest --disable-alsa-shared --disable-esd --disable-esdtest --disable-esd-shared --disable-pulseaudio --disable-pulseaudio-shared --disable-arts --disable-arts-shared --disable-nas --disable-nas-shared --disable-diskaudio --disable-dummyaudio --disable-mintaudio --disable-nasm --disable-altivec --disable-video-x11 --disable-x11-shared --disable-dga --disable-video-dga --disable-video-x11-dgamouse --disable-video-x11-vm --disable-video-x11-xv --disable-video-x11-xinerama --disable-video-x11-xme --disable-video-x11-xrandr --disable-video-photon --disable-video-cocoa --disable-video-directfb --disable-video-ps2gs --disable-video-ps3 --disable-video-svga --disable-video-vgl --disable-video-wscons --disable-video-xbios --disable-video-gem --disable-video-dummy --disable-video-opengl --disable-osmesa-shared --disable-sdl-dlopen --without-x
+SDLCFG_BIN=$(PREFIX)/bin/sdl-config
+SDLTTF_DIR=SDL_ttf-2.0.11
+SDLTTF_BIN=$(PREFIX)/lib/libSDL_ttf.a
+SDLTTF_OPT=--enable-static --enable-shared --without-x --with-freetype-prefix=$(PREFIX)/lib --with-sdl-prefix=$(PREFIX)/lib
+SDLIMG_DIR=
+SDLIMG_BIN=
+SDLIMG_OPT=
 
-.PHONY: all clean
+.PHONY: all clean clean-target clean-zlib clean-libpng clean-freetype clean-dfb clean-sdl clean-sdlttf
 
-all: $(ZLIB_BIN) $(LIBPNG_BIN) $(FREETYPE_BIN) $(JPEG_BIN) $(DFB_BIN) $(SDL_BIN)
+all: $(ZLIB_BIN) $(LIBPNG_BIN) $(FREETYPE_BIN) $(SDL_BIN) $(SDLTTF_BIN)
 
-clean:
+clean: clean-target clean-zlib clean-libpng clean-freetype clean-dfb clean-sdl clean-sdlttf
+
+clean-target:
 	rm -rf $(PREFIX)
 	mkdir $(PREFIX)
+
+clean-zlib:
 	cd $(ZLIB_DIR) ;\
 	make clean ;\
 	rm -f Makefile
+
+clean-libpng:
 	cd $(LIBPNG_DIR) ;\
 	make clean ;\
 	rm -f Makefile
+
+clean-freetype:
 	cd $(FREETYPE_DIR) ;\
 	make clean ;\
 	rm -f config.mk
+
+clean-dfb:
 	cd $(DFB_DIR) ;\
 	make clean ;\
 	rm -f Makefile
+
+clean-sdl:
 	cd $(SDL_DIR) ;\
+	make clean ;\
+	rm -f Makefile
+
+clean-sdlttf:
+	cd $(SDLTTF_DIR) ;\
 	make clean ;\
 	rm -f Makefile
 
@@ -64,7 +92,7 @@ $(ZLIB_BIN): $(ZLIB_DIR)/Makefile
 
 $(LIBPNG_DIR)/Makefile: $(ZLIB_BIN)
 	cd $(LIBPNG_DIR) ;\
-	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) CC=$(CC) CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
+	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) CC=$(CC) CFLAGS="-I$(PREFIX)/include" CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
 
 $(LIBPNG_BIN): $(LIBPNG_DIR)/Makefile
 	cd $(LIBPNG_DIR) ;\
@@ -73,7 +101,7 @@ $(LIBPNG_BIN): $(LIBPNG_DIR)/Makefile
 
 $(FREETYPE_DIR)/config.mk:
 	cd $(FREETYPE_DIR) ;\
-	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(FREETYPE_OPT) CC=$(CC) CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
+	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(FREETYPE_OPT) CC=$(CC) CFLAGS="-I$(PREFIX)/include" CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
 
 $(FREETYPE_BIN): $(FREETYPE_DIR)/config.mk
 	cd $(FREETYPE_DIR) ;\
@@ -82,7 +110,7 @@ $(FREETYPE_BIN): $(FREETYPE_DIR)/config.mk
 
 $(JPEG_DIR)/Makefile:
 	cd $(JPEG_DIR) ;\
-	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(JPEG_OPT) CC=$(CC) CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
+	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(JPEG_OPT) CC=$(CC) CFLAGS="-I$(PREFIX)/include" CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
 
 $(JPEG_BIN): $(JPEG_DIR)/Makefile
 	cd $(JPEG_DIR) ;\
@@ -91,7 +119,7 @@ $(JPEG_BIN): $(JPEG_DIR)/Makefile
 
 $(DFB_DIR)/Makefile: $(ZLIB_BIN) $(LIBPNG_BIN) $(FREETYPE_BIN) $(JPEG_BIN)
 	cd $(DFB_DIR) ;\
-	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(DFB_OPT) CC=$(CC) CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
+	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(DFB_OPT) CC=$(CC) CFLAGS="-I$(PREFIX)/include" CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
 
 $(DFB_BIN): $(DFB_DIR)/Makefile
 	cd $(DFB_DIR) ;\
@@ -100,10 +128,18 @@ $(DFB_BIN): $(DFB_DIR)/Makefile
 
 $(SDL_DIR)/Makefile:
 	cd $(SDL_DIR) ;\
-	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(SDL_OPT) CC=$(CC) CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
+	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(SDL_OPT) CC=$(CC) CFLAGS="-I$(PREFIX)/include" CPPFLAGS="-I$(PREFIX)/include" LDFLAGS="-L$(PREFIX)/lib"
 
 $(SDL_BIN): $(SDL_DIR)/Makefile
 	cd $(SDL_DIR) ;\
 	make ;\
 	make install ;\
 
+$(SDLTTF_DIR)/Makefile: $(SDL_BIN) $(SDLCFG_BIN) $(FREETYPE_BIN)
+	cd $(SDLTTF_DIR) ;\
+	./configure --host=$(TARGETMACH) --build=$(BUILDMACH) --prefix=$(PREFIX) $(SDLTTF_OPT) CC=$(CC) CFLAGS="`$(SDLCFG_BIN) --cflags`  -I$(PREFIX)/include -I$(PREFIX)/include/freetype2 -I$(PREFIX)/include/SDL" CPPFLAGS="-I$(PREFIX)/include -I$(PREFIX)/include/freetype2 -I$(PREFIX)/include/SDL" LDFLAGS="-L$(PREFIX)/lib `pkg-config --libs sdl` `pkg-config --libs freetype2`"
+
+$(SDLTTF_BIN): $(SDLTTF_DIR)/Makefile
+	cd $(SDLTTF_DIR) ;\
+	make ;\
+	make install;

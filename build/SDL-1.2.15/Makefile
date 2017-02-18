@@ -21,7 +21,7 @@ distfile = $(distdir).tar.gz
 SHELL	= /bin/bash
 CC      = armarmv5te-unknown-linux-gnueabi-gcc
 INCLUDE = -I./include
-CFLAGS  = -g -O2 -I/home/bmuessig/Pandora/target/include
+CFLAGS  = -I/home/bmuessig/Pandora/target/include -I/home/bmuessig/Pandora/target/include
 EXTRA_CFLAGS = -I./include -D_GNU_SOURCE=1 -fvisibility=hidden -D_REENTRANT -DHAVE_LINUX_VERSION_H -Wall
 LDFLAGS = -L/home/bmuessig/Pandora/target/lib
 EXTRA_LDFLAGS =  -lm -lpthread

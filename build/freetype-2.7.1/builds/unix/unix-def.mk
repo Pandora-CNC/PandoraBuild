@@ -62,9 +62,9 @@ version_info := 19:0:13
 
 # Variables needed for `freetype-config' and `freetype.pc'.
 #
-REQUIRES_PRIVATE   := 
-LIBS_PRIVATE       := -lz
-LIBSSTATIC_CONFIG  := -lfreetype -lz
+REQUIRES_PRIVATE   := zlib, libpng
+LIBS_PRIVATE       := 
+LIBSSTATIC_CONFIG  := -lfreetype -L/home/bmuessig/Pandora/target/lib -lz -L/home/bmuessig/Pandora/target/lib -lpng16 -lm -lz -lm
 build_libtool_libs := 
 ft_version         := 19.0.13
 

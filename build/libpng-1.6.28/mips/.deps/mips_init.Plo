@@ -15,14 +15,10 @@ mips/mips_init.lo: mips/mips_init.c \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include/stdarg.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio_lim.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sys_errlist.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio.h \
  mips/../pngpriv.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdlib.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-bsearch.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-float.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/string.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string2.h \
  config.h mips/../pnglibconf.h mips/../png.h mips/../pngconf.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include-fixed/limits.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/lib/gcc/armarmv5te-unknown-linux-gnueabi/5.2.0/include-fixed/syslimits.h \
@@ -46,7 +42,6 @@ mips/mips_init.lo: mips/mips_init.c \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/nan.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/mathdef.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/mathcalls.h \
- /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/mathinline.h \
  mips/../pngstruct.h /home/bmuessig/Pandora/target/include/zlib.h \
  /home/bmuessig/Pandora/target/include/zconf.h \
  /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/sys/types.h \
@@ -87,21 +82,13 @@ mips/mips_init.lo: mips/mips_init.c \
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/sys_errlist.h:
 
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdio.h:
-
 mips/../pngpriv.h:
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/stdlib.h:
 
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-bsearch.h:
-
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/stdlib-float.h:
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/string.h:
-
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string.h:
-
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/string2.h:
 
 config.h:
 
@@ -154,8 +141,6 @@ mips/../pngconf.h:
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/mathdef.h:
 
 /home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/mathcalls.h:
-
-/home/bmuessig/x-tools/armarmv5te-unknown-linux-gnueabi/armarmv5te-unknown-linux-gnueabi/sysroot/usr/include/bits/mathinline.h:
 
 mips/../pngstruct.h:
 

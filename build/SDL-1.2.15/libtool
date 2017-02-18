@@ -138,7 +138,7 @@ old_postuninstall_cmds=""
 LTCC="armarmv5te-unknown-linux-gnueabi-gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-g -O2 -I./include -D_GNU_SOURCE=1"
+LTCFLAGS="-I/home/bmuessig/Pandora/target/include -I./include -D_GNU_SOURCE=1"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
 global_symbol_pipe=""
